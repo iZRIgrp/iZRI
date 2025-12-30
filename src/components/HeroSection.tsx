@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import izriLogo from "@/assets/izri-main-logo.png";
-import heroImage from "@/assets/hero-landscape.jpg";
+import heroImage from "@/assets/hero.jpeg";
 
 export function HeroSection() {
   return (
@@ -8,60 +7,60 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <motion.img
-          initial={{ scale: 1.1 }}
+          initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.6, ease: "easeOut" }}
           src={heroImage}
           alt="Atlas Mountains landscape"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-izri-black/60 via-izri-black/40 to-izri-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-izri-black/65 via-izri-black/45 to-izri-black/85" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="mb-8 inline-block p-4 rounded-lg bg-izri-cream/95 shadow-glow"
-        >
-          <img
-            src={izriLogo}
-            alt="IZRI - Where Vision Meets Heritage"
-            className="h-28 md:h-36 lg:h-44 w-auto mx-auto"
-          />
-        </motion.div>
-
-        {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="font-display text-xl md:text-2xl lg:text-3xl text-izri-cream tracking-wide italic mb-6 drop-shadow-lg"
+          transition={{ duration: 0.9, delay: 0.6 }}
+          className="mt-10 md:mt-20 font-display text-2xl md:text-3xl lg:text-4xl text-izri-cream tracking-wide italic mb-6 drop-shadow-lg"
         >
-          Where Vision Meets Heritage
-        </motion.p>
+          IZRI — Where Vision Meets Heritage
+        </motion.h1>
 
         {/* Decorative Line */}
         <motion.div
           initial={{ width: 0 }}
-          animate={{ width: 120 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="h-px bg-primary mx-auto mb-8"
+          animate={{ width: 140 }}
+          transition={{ duration: 1.2, delay: 0.9 }}
+          className="h-px bg-primary/80 mx-auto mb-8"
         />
 
         {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="font-sans text-base md:text-lg text-izri-cream/90 max-w-2xl mx-auto leading-relaxed drop-shadow-md"
-        >
-          A cultural collective dedicated to preserving, reinterpreting, and 
-          modernizing Amazigh heritage from the heart of South-East Morocco.
-        </motion.p>
+        <div className="max-w-3xl mx-auto">
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="font-sans text-base md:text-lg text-izri-cream/90 leading-relaxed drop-shadow-md mb-4"
+          >
+            IZRI is a cultural and creative collective rooted in the South-East of
+            Morocco, dedicated to preserving, reinterpreting, and modernizing
+            Amazigh heritage.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.35 }}
+            className="font-sans text-base md:text-lg text-izri-cream/80 leading-relaxed drop-shadow-md italic"
+          >
+            Through art, land, craftsmanship, and community, IZRI explores culture
+            as a living vision — a gaze connecting memory, identity, and
+            contemporary expression.
+          </motion.p>
+        </div>
 
         {/* Scroll Indicator */}
         <motion.div
@@ -72,8 +71,8 @@ export function HeroSection() {
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-px h-16 bg-gradient-to-b from-primary/60 to-transparent"
+            transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-px h-16 bg-gradient-to-b from-primary/70 to-transparent"
           />
         </motion.div>
       </div>

@@ -13,13 +13,14 @@ import izriCommunityLogo from "@/assets/izri-community-logo.png";
 // Import section images
 import galleryImage from "@/assets/gallery-portrait.jpg";
 import saffronImage from "@/assets/saffron-product.jpg";
-import carpetImage from "@/assets/carpet-artisanal.jpg";
+// import carpetImage from "@/assets/carpet-artisanal-taz.jpg";
+import carpetImage from "@/assets/carpet-artisanal-taz.jpeg";
 import communityImage from "@/assets/community-gathering.jpg";
 
 const subgroupData = [
   {
     id: "pic",
-    name: "IZRI.pic",
+    name: "iZRI.pic",
     tagline: "Visual Art & Photography",
     description:
       "A visual journey through the soul of Amazigh culture. Our lens captures the poetry of everyday life, the dignity of our elders, and the timeless beauty of our landscapes. Black and white compositions meet contemporary perspectives.",
@@ -53,7 +54,7 @@ const subgroupData = [
   },
   {
     id: "artisanal",
-    name: "IZRI.artisanal",
+    name: "iZRI.artisanal",
     tagline: "Handmade Heritage",
     description:
       "Every thread tells a story. From the iconic Taznakht carpets, where geometric symbols encode ancient wisdom, to curated vintage jackets that bridge generations — we celebrate craftsmanship as a living art form.",
@@ -70,7 +71,7 @@ const subgroupData = [
   },
   {
     id: "community",
-    name: "IZRI.community",
+    name: "iZRI.community",
     tagline: "Dialogue & Connection",
     description:
       "A gathering space for those who share our vision. Here, conversations become bridges between cultures, and stories become the fabric of our collective memory. Join us in building a community rooted in respect, curiosity, and shared heritage.",

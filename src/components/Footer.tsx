@@ -10,10 +10,10 @@ const socialLinks = [
 
 const navLinks = [
   { name: "About", href: "#about" },
-  { name: "IZRI.pic", href: "#pic" },
-  { name: "IZRI.ora", href: "#ora" },
-  { name: "IZRI.artisanal", href: "#artisanal" },
-  { name: "IZRI.community", href: "#community" },
+  { name: "iZRI.pic", href: "#pic" },
+  { name: "iZRI.ora", href: "#ora" },
+  { name: "iZRI.artisanal", href: "#artisanal" },
+  { name: "iZRI.community", href: "#community" },
 ];
 
 export function Footer() {

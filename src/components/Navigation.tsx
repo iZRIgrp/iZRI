@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import izriLogo from "@/assets/izri-main-logo.png";
+import izriGroupLogo from "@/assets/iZRI_Grp-removebg-preview.png";
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -39,9 +39,9 @@ export function Navigation() {
             {/* Logo */}
             <a href="#" className="flex items-center">
               <img
-                src={izriLogo}
+                src={izriGroupLogo}
                 alt="iZRI"
-                className="h-12 w-auto"
+                className="h-36 w-auto transition-opacity duration-300"
               />
             </a>
 
